@@ -6,7 +6,7 @@
 /*   By: nsena <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/14 19:07:12 by nsena             #+#    #+#             */
-/*   Updated: 2019/09/14 19:09:38 by nsena            ###   ########.fr       */
+/*   Updated: 2019/09/19 11:43:27 by nsena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,6 @@ void	*ft_memalloc(size_t size)
 	if (!(area = (char*)malloc(size * sizeof(char))))
 		return (NULL);
 	else
-	{
-		while (i < size)
-		{
-			area[i] = 0;
-			i++;
-		}
-	}
+		ft_bzero(area, size);
 	return (area);
 }
