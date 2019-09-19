@@ -6,7 +6,7 @@
 /*   By: nsena <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/14 19:01:59 by nsena             #+#    #+#             */
-/*   Updated: 2019/09/17 16:01:16 by nsena            ###   ########.fr       */
+/*   Updated: 2019/09/19 12:20:55 by nsena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,10 +128,9 @@ typedef struct		s_list
 }					t_list;
 
 char				*ft_str_skip_symbols(char *str, char *symbols);
-char				*ft_str_skip_until(char *str, char stop_symbol);
 void				ft_print_memory(void *mem, size_t size);
 int					ft_strcmp(const char *s1, const char *s2);
-size_t				ft_strlen(char *s);
+size_t				ft_strlen(const char *str);
 int					ft_strncmp(const char *s1, const char *s2, unsigned int n);
 char				*ft_strdup(const char *s1);
 char				*ft_strncpy(char *dest, const char *src, unsigned int n);
