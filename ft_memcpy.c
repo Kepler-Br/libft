@@ -6,7 +6,7 @@
 /*   By: nsena <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/14 19:07:24 by nsena             #+#    #+#             */
-/*   Updated: 2019/09/20 14:01:50 by nsena            ###   ########.fr       */
+/*   Updated: 2019/09/20 14:09:27 by nsena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char *d;
-	const char *s;
+	char		*d;
+	const char	*s;
 
 	d = dst;
 	s = src;

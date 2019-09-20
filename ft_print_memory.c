@@ -6,7 +6,7 @@
 /*   By: nsena <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/14 19:20:31 by nsena             #+#    #+#             */
-/*   Updated: 2019/09/14 19:29:26 by nsena            ###   ########.fr       */
+/*   Updated: 2019/09/20 14:46:32 by nsena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static void		print_memory_char(void *mem, size_t size)
 	i = 0;
 	while (i < size)
 	{
-		if (((char*)mem)[i] >= ' ' && ((char*)mem)[i] <= 'w')
+		if (((char*)mem)[i] >= ' ' && ((char*)mem)[i] <= '~')
 			write(1, &((char*)mem)[i], 1);
 		else
 			write(1, ".", 1);
