@@ -6,7 +6,7 @@
 /*   By: nsena <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/14 19:35:29 by nsena             #+#    #+#             */
-/*   Updated: 2019/09/16 15:14:17 by nsena            ###   ########.fr       */
+/*   Updated: 2019/09/30 15:57:04 by nsena            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ static void			t_vector_push(t_vector *this, void *data)
 
 	if (this->last_item_index == this->capacity)
 	{
-		this->data = ft_realloc(this->data, this->capacity,
-								10 * this->data_sizeof);
+		this->data = ft_realloc(this->data, this->capacity *
+				this->data_sizeof, 10 * this->data_sizeof);
 		this->capacity += 10;
 	}
 	pointer = (void *)&((char *)this->data)
